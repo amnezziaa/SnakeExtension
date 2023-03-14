@@ -1,8 +1,18 @@
 # SnakeExtension
 
-A WIP Google Chrome extension aiming to create a speedrunning assistant on google snake page.
+A WIP Google Chrome extension aiming to create a [speedrunning](https://www.speedrun.com/snake_game) assistant on google snake page.
+
+## Goals
+
+- ~~Attempts counter~~
+
+- Splits
+
+- Matching theme
 
 ## Documentation
+
+### Chrome
 
 - [Chrome extensions 101](https://developer.chrome.com/docs/extensions/mv3/getstarted/extensions-101/)
 
@@ -11,3 +21,7 @@ A WIP Google Chrome extension aiming to create a speedrunning assistant on googl
 - [Chrome extensions Focus mode](https://developer.chrome.com/docs/extensions/mv3/getstarted/tut-focus-mode/)
 
 - [Chrome extensions scripting API](https://developer.chrome.com/docs/extensions/reference/scripting)
+
+### Miscellaneous
+
+- [Mutation observer](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
