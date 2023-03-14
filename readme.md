@@ -10,4 +10,4 @@ A WIP Google Chrome extension aiming to create a speedrunning assistant on googl
 
 - [Chrome extensions Focus mode](https://developer.chrome.com/docs/extensions/mv3/getstarted/tut-focus-mode/)
 
-- [Chrome extensions scriptin API](https://developer.chrome.com/docs/extensions/reference/scripting)
+- [Chrome extensions scripting API](https://developer.chrome.com/docs/extensions/reference/scripting)

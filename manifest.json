@@ -4,7 +4,7 @@
   "description": "Extension made for google snake speedrun purposes (https://www.speedrun.com/snake_game)",
   "version": "1.0",
   "action": {
-    "default_icon": "icon.png"
+    "default_icon": "./medias/pictures/icon.png"
   },
   "background": {
     "service_worker": "./background/background.js"
