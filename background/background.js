@@ -1,4 +1,4 @@
-const snakeURL = "https://www.google.com/search?q=snake";
+const snakeURL = "https://www.google.com/search?q=google+snake";
 
 chrome.action.onClicked.addListener(async (tab) => {
   if (tab.url.startsWith(snakeURL)) {

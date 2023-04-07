@@ -3,6 +3,7 @@ if (document.getElementsByClassName("dtCYCd VDgVie")) {
 
   if (pluginHolder) {
     pluginHolder.remove();
+    document.getElementsByClassName("FL0z2d Uxkl7b")[0].style.visibility = null;
     console.log("Content removed");
   } else {
     let attempts = 0; // Attempts var
@@ -24,26 +25,28 @@ if (document.getElementsByClassName("dtCYCd VDgVie")) {
 
     const appleObserver = new MutationObserver(function (mutations, observer) {
       for (let { type, target } of mutations) {
-        console.log("Speedrun splits will be added thanks to this")
+        console.log("Speedrun splits will be added thanks to this");
       }
     });
 
-    appleObserver.observe(appleTarget, { attributes: true, childList: true});
+    appleObserver.observe(appleTarget, { attributes: true, childList: true });
 
-    const attemptsTarget = document.getElementsByClassName("wjOYOd")[0]; // Variable that tells us when a new game starts
+    const restartButton = document.getElementsByClassName("FL0z2d Uxkl7b")[0]; // Variable that tells us when a new game starts
+    restartButton.style.visibility = "visible";
+    restartButton.focus();
 
-    const attemptsObserver = new MutationObserver(function (
-      mutations,
-      observer
-    ) {
-      for (let { type, target } of mutations) {
-        if (type === "attributes" && target.style.visibility === "hidden") {
-          attempts++;
-          attemptsCounter = document.getElementById("attemptsCounter");
-          attemptsCounter.innerText = `Attempts : ${attempts}`;
-        }
+    const handleStartingGame = function (event) {
+      if (
+        event.type === "click" ||
+        (event.type === "keydown" && event.key === "Enter")
+      ) {
+        attempts++;
+        attemptsCounter = document.getElementById("attemptsCounter");
+        attemptsCounter.innerText = `Attempts : ${attempts}`;
       }
-    });
-    attemptsObserver.observe(attemptsTarget, { attributes: true });
+    };
+
+    restartButton.addEventListener("click", handleStartingGame);
+    restartButton.addEventListener("keydown", handleStartingGame);
   }
 }
